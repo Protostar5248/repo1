@@ -14,7 +14,7 @@
   </style>
   <body onmousemove="moveBat(event)">
     <div id='board'></div>
-    <div id='bat'<div></div>'></div>
+    <div id='bat'></div>
     <div id='ball'></div>
   </body>
   <script>
@@ -35,11 +35,11 @@
       if(y<0)speedY=2
       if((y>372)&&(Math.abs(batX-x)<60)){speedY=-2;}
       if(y>450){
-        prompt('game over!');
+        alert('game over!');
         clearInterval(timer);
       }
     }
     
-    var timer=setInterval(moveball, 10);
+    var timer=setInterval(moveBall, 10);
   </script>
 </html>
